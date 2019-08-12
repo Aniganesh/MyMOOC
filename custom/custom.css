@@ -1,0 +1,129 @@
+.navbar-brand {
+    font-family: 'DM Serif Text', serif;
+}
+
+.navbar-brand>span {
+    color: white;
+    font-size: larger;
+}
+
+.btn-theme-full {
+    border: 0px solid red;
+}
+
+.btn-theme {
+    color: #fff;
+    background: #fe6655;
+    border-radius: 4px;
+    line-height: 22px;
+    height: 40px;
+    width: 85px;
+}
+
+.btn-outline-theme {
+    border: solid 2px white;
+}
+
+.btn-theme:hover, .btn-outline-theme:hover {
+    box-shadow: 0px 2px 4px #a82233;
+}
+
+.hidden-option-group [type="radio"] {
+    /* z-index:-1;
+    opacity:0.5;
+    position:absolute; */
+    display: none;
+}
+
+.hidden-option-group .label {
+    display: inline-block;
+    width: 195px;
+    height: 40px;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.formset {
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    top: 20%;
+    left: 72%;
+    background: white;
+    border: 3px solid lightgray;
+    border-radius: 15px;
+}
+
+.subform {
+    margin: 0;
+    height: 80%;
+}
+
+.subform * {
+    margin-left: 5px;
+    margin-top: 2px;
+    width: 360px;
+}
+
+.form-group, .form-inline {
+    position: relative;
+    display: inline-block;
+}
+
+/* .text-muted functions as a tooltip */
+
+.form-group .text-muted, .form-inline .text-muted {
+    visibility: hidden;
+    display: inline-block;
+    width: 300px;
+    border: dashed 2px lightgray;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 0%;
+    right: 102.5%;
+    margin-left: -60px;
+    background: white;
+}
+
+.form-group:hover:hover>.text-muted,.form-inline:hover:hover>.text-muted {
+    visibility: visible;
+    opacity: 1;
+}
+
+#background {
+    z-index: -199;
+    height: 80vh;
+    width: 99.35vw;
+    overflow:hidden;
+}
+#background *{
+    height: 99vw;
+    height: 80vh;
+    overflow:hidden;
+}
+
+.main-footer {
+    color: #cecece;
+    background: #333;
+}
+
+.centre {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about {
+    width: 80vw;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+

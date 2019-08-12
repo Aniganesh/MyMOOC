@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-16">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/2765ee52e5.js"></script>
+    <title>Kalaashaala | Home</title>
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap" rel="stylesheet">
+    <link href="custom/custom.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <script src="custom/custom.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light" style="background: #fe6655;">
+        <a class="navbar-brand" style="font-size: 24pt" href="#">Kalaashaala</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="padding-top:5px">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="our courses" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Our courses</a>
+                    <div class="dropdown-menu" aria-labelledby="our courses">
+                        <a class="dropdown-item" href="#">Veena</a>
+                        <a class="dropdown-item" href="#">Flute</a>
+                        <a class="dropdown-item" href="#">Bharatanatyam</a>
+                        <a class="dropdown-item" href="#">Tabla</a>
+                        <a class="dropdown-item" href="#">Carnatic Singing</a>
+                        <a class="dropdown-item" href="#">Hindustaani Singing</a>
+                        <a class="dropdown-item" href="#">Mridhanga</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn-theme btn-outline-theme my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div id="background" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://i.ytimg.com/vi/_3OUQTruQRE/maxresdefault.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://wallpaperstock.net/wallpapers/thumbs1/37979wide.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.ytimg.com/vi/3h_mJwg3xdg/maxresdefault.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+    <div class="formset">
+        <div id="login-signup-choice" class="hidden-option-group">
+            <label class="label" onclick="showSignup()" id="signuplabel" for="signup">Signup</label>
+            <input type="radio" name="signup-login" id="signupRadio" value="signup" checked />
+            <label class="label" onclick="showLogin()" id="loginLabel" for="login">Login</label>
+            <input type="radio" name="signup-login" id="loginRadio" value="login" />
+        </div>
+        <form id="signup" class="subform" action="signup.php" method="POST">
+            <div class="form-group">
+                <label for="signup-name" class="">Full name</label>
+                <input type="text" name="signup[name]" id="signup-name" class="form-control"
+                    placeholder="Please enter your full name" aria-describedby="helpId-name">
+                <span id="helpId-name" class="small text-muted">Enter your full name</span>
+            </div>
+            <div class="form-group">
+                <label for="signup-email" class="">Email</label>
+                <input type="email" name="signup[email]" id="signup-email" class="form-control"
+                    placeholder="Please enter your email id" aria-describedby="helpId-email">
+                <span id="helpId-email" class="small text-muted">Enter your email. This will be used for confirming your
+                    identity and account</span>
+            </div>
+            <div class="form-group">
+                <label for="signup-password" class="">Password</label>
+                <input type="password" name="signup[password]" id="signup-password" class="form-control"
+                    placeholder="Enter your password" aria-describedby="helpId-pass">
+                <span id="helpId-pass" class="text-muted small">Enter your password. Be careful of typos. Use at least 8
+                    characters. Don't use your banking password</span>
+            </div>
+            <div>
+                <span>I would like to: </span><br />
+                <radiogroup>
+                    <input type="radio" id="signup-learn" name="signup[purpose]" style="width:initial;" value="Learn"
+                        checked /> Learn <input type="radio" id="signup-teach" name="signup[purpose]"
+                        style="width:initial;" value="Teach" />Teach
+                </radiogroup>
+            </div>
+            <div class="button-group">
+                <button type="submit" style="width:85px;" class="btn-theme btn-theme-full">Submit</button>
+                <button type="reset" style="width:85px; background:lightgray;"
+                    onmouseover="this.style['box-shadow']='0px 2px 4px #a3a3a3'"
+                    onmouseout="this.style['box-shadow']='none'" class="btn">Reset</button>
+            </div>
+            <span>Already have an account? <a href="#" class="text-center" onclick="showLogin()">Signin</a></span>
+        </form>
+        <form id="login" class="subform" style="display: none;" action="login.php" method="POST">
+            <div class="form-group">
+                <label for="login-username">Username</label>
+                <input type="text" name="login[username]" id="login-username" class="form-control"
+                    placeholder="Enter your username/email" aria-describedby="helpId-uname" />
+                <span id="helpId-uname" class="small text-muted">Enter the username/email you used while signing
+                    up</span>
+            </div>
+            <div class="form-group">
+                <label for="login-password">Password</label>
+                <input type="password" class="form-control" name="" id="login-password"
+                    placeholder="Enter your password" aria-describedby="helpId-logpass">
+                <span id="helpId-logpass" class="small text-muted">Enter your password</span>
+            </div>
+            <button type="submit" class="btn-theme btn-theme-full" style="width:85px;">Login</button>
+        </form>
+    </div>
+    <div class="about" id="about">
+        <h1 class="text-center" id="about">About us</h1>
+        <div class="card-group">
+            <div class="card text-center border-light">
+                <img class="card-img-top" src="https://picsum.photos/id/1025/384/180" data-src="holder.js/100x180/"
+                    alt="Card image cap" />
+                <div class="card-body">
+                    <h4 class="card-title">Mission</h4>
+                    <p class="card-text">To enable anyone and everyone learn the various fine arts from the finest
+                        tutors around the world from
+                        the
+                        comfort of their living room.</p>
+                </div>
+            </div>
+            <div class="card text-center border-light">
+                <img class="card-img-top" src="https://picsum.photos/id/1025/384/180" data-src="holder.js/100x180/"
+                    alt="Card image cap" />
+                <div class="card-body">
+                    <h4 class="card-title">Goals</h4>
+                    <p class="card-text">Text</p>
+                </div>
+            </div>
+            <div class="card text-center border-light">
+                <img class="card-img-top" src="https://picsum.photos/id/1025/384/180" data-src="holder.js/100x180/"
+                    alt="Card image cap" />
+                <div class="card-body">
+                    <h4 class="card-title">Vision</h4>
+                    <p class="card-text">Text</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="main-footer">
+        <form class="centre">
+            <div class="form-inline">
+                <label for="nl-email">Don't want to take the plunge yet but want to hear from us? Signup for our newsletter: 
+                </label>
+                <input style="padding-left:10px;" type="nl-email" name="nl-email" id="nl-email" class="form-control" placeholder="Enter your email"
+                    aria-describedby="helpId-nl-email">
+                <span id="helpId-nl-email" style="left:61.5%" class="text-muted">Enter your email here. You will receive updates from us
+                    regularly regarding new courses, tutors and offers</span>
+                <div style="padding-left:10px;;"> <button type="submit" class="btn-theme btn-theme-full"
+                        style="width: 40px; height:40px;"><i class="fas fa-paper-plane"></i></button></div>
+
+            </div>
+
+        </form>
+        <div class="row centre">
+            <div class="col-sm-4" style="font-family: 'DM Serif Text', serif; font-size: 35pt">
+                Kalaashaala
+            </div>
+            <div class="row"><i style="font-size:larger" class="far fa-envelope"></i> info@kalaashaala.org</div>
+            <div class="col-sm-8">Occaecat aute elit in amet eu consectetur velit laborum.Occaecat aute elit in amet eu
+                consectetur velit laborum.Occaecat aute elit in amet eu consectetur velit laborum.</div>
+        </div>
+        <div class="text-center" style="background: #201f1f;height: 40px; font-size:18px;">
+            <span style="font-size:larger">©</span> Copyright 2019 Kalaashaala. All rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>
