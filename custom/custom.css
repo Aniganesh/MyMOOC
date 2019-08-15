@@ -28,30 +28,12 @@
     box-shadow: 0px 2px 4px #a82233;
 }
 
-.hidden-option-group [type="radio"] {
-    /* z-index:-1;
-    opacity:0.5;
-    position:absolute; */
-    display: none;
-}
-
-.hidden-option-group .label {
-    display: inline-block;
-    width: 195px;
-    height: 40px;
-    line-height: 30px;
-    font-size: 20px;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
 .formset {
     width: 400px;
     height: 500px;
     position: absolute;
-    top: 20%;
-    left: 72%;
+    right: 10%;
+    top:20%;
     background: white;
     border: 3px solid lightgray;
     border-radius: 15px;
@@ -73,39 +55,17 @@
     display: inline-block;
 }
 
-/* .text-muted functions as a tooltip */
-
-.form-group .text-muted, .form-inline .text-muted {
-    visibility: hidden;
-    display: inline-block;
-    width: 300px;
-    border: dashed 2px lightgray;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 1;
-    bottom: 0%;
-    right: 102.5%;
-    margin-left: -60px;
-    background: white;
-}
-
-.form-group:hover:hover>.text-muted,.form-inline:hover:hover>.text-muted {
-    visibility: visible;
-    opacity: 1;
-}
-
 #background {
     z-index: -199;
     height: 80vh;
     width: 99.35vw;
-    overflow:hidden;
+    overflow: hidden;
 }
-#background *{
+
+#background * {
     height: 99vw;
     height: 80vh;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .main-footer {
@@ -127,3 +87,20 @@
     margin-right: auto;
 }
 
+
+@media only screen and (max-width:720px) {
+    .formset {
+        position: relative;
+        top: 5%;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+    .subform * {
+        width: initial;
+    }
+    #background {
+        display: none;
+    }
+    
+}
