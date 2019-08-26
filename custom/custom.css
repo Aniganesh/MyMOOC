@@ -2,6 +2,11 @@
     font-family: 'DM Serif Text', serif;
 }
 
+:root{
+    --theme-colour: #fe6655;
+    /* --theme-colour: #7283ff; */
+}
+
 .navbar-brand>span {
     color: white;
     font-size: larger;
@@ -13,7 +18,7 @@
 
 .btn-theme {
     color: #fff;
-    background: #fe6655;
+    background: var(--theme-colour);
     border-radius: 4px;
     line-height: 22px;
     height: 40px;
@@ -93,6 +98,13 @@
     color: black;
     max-width: 350px;
     width: max-width;
+}
+
+.set-icons {
+    background: radial-gradient(#36D7B7 10%, var(--theme-colour));
+    color: transparent;
+    background-clip: text;
+    font-size: 80pt;
 }
 
 @media only screen and (max-width:720px) {

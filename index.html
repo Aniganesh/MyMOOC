@@ -21,10 +21,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <script src="custom/custom.js" type="text/javascript" defer></script>
+    
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm navbar-light" style="background: #fe6655;">
+    <nav class="navbar navbar-expand-sm navbar-light" style="background: var(--theme-colour);">
         <a class="navbar-brand" style="font-size: 24pt" href="#">Kalaashaala</a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
             aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,8 +75,8 @@
     <div class="formset">
         <div class="btn-toolbar" role="toolbar" aria-label="Signup or Login">
             <div class="btn-group mr-2" role="group" aria-label="First group">
-                <button type="button" onclick="showSignup()" class="btn ">Sign up</button>
-                <button type="button" onclick="showLogin()" class="btn ">Login</button>
+                <button type="button" onclick="showSignup()" class="btn " data-toggle="tooltip" data-placement="bottom" title="View and fill signup form">Sign up</button>
+                <button type="button" onclick="showLogin()" class="btn " data-toggle="tooltip" data-placement="bottom" title="View and fill login form">Login</button>
             </div>
         </div>
         <form id="signup" class="subform" action="signup.php" method="POST">
@@ -159,8 +160,7 @@
         <h1 class="text-center" id="about">About us</h1>
         <div class="card-group">
             <div class="card text-center border-light">
-                <img class="card-img-top" src="https://picsum.photos/id/1025/384/180" data-src="holder.js/100x180/"
-                    alt="Card image cap" />
+                <i class="fas fa-crosshairs set-icons"></i>
                 <div class="card-body">
                     <h4 class="card-title">Mission</h4>
                     <p class="card-text">To enable anyone and everyone learn the various fine arts from the finest
@@ -169,17 +169,16 @@
                         comfort of their living room.</p>
                 </div>
             </div>
+
             <div class="card text-center border-light">
-                <img class="card-img-top" src="https://picsum.photos/id/1025/384/180" data-src="holder.js/100x180/"
-                    alt="Card image cap" />
+                <i class="fab fa-empire set-icons   "></i>
                 <div class="card-body">
                     <h4 class="card-title">Goals</h4>
                     <p class="card-text">Text</p>
                 </div>
             </div>
             <div class="card text-center border-light">
-                <img class="card-img-top" src="https://picsum.photos/id/1025/384/180" data-src="holder.js/100x180/"
-                    alt="Card image cap" />
+                <i class="far fa-eye set-icons"></i>
                 <div class="card-body">
                     <h4 class="card-title">Vision</h4>
                     <p class="card-text">Text</p>
@@ -226,6 +225,8 @@
         <div class="text-center" style="background: #201f1f;height: max-content; font-size:18px;">
             <span style="font-size:larger">©</span> Copyright 2019 Kalaashaala. All rights reserved.
         </div>
+
+
     </footer>
 </body>
 
