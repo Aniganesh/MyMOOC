@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+<!--------------------------------------------------- Head begin -------------------------------------------------------->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,8 +26,13 @@
     <script src="custom/custom.js" type="text/javascript" defer></script>
 
 </head>
+<!--------------------------------------------------- Head end ---------------------------------------------------------->
+
 
 <body>
+
+    <!----------------------------------------------- Navigation Begin ------------------------------------------------------>
+
     <nav class="navbar navbar-expand-sm navbar-light" style="background: var(--theme-colour);">
         <a class="navbar-brand" style="font-size: 24pt" href="#">MyMOOC</a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
@@ -62,6 +70,9 @@
 
         </div>
     </nav>
+
+    <!------------------------------------------------ Navigation end ------------------------------------------------------->
+
     <div id="background" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -126,7 +137,8 @@
                     least 8 characters. Don't use your banking password.</span>
             </div>
             <div class="button-group">
-                <button type="submit" style="width:85px;" class="btn-theme btn-theme-full">Submit</button>
+                <button type="button" onclick="window.location.replace('Email verification.html');" style="width:85px;"
+                    class="btn-theme btn-theme-full">Submit</button>
                 <button type="reset" style="width:85px; background:lightgray;"
                     onmouseover="this.style['box-shadow']='0px 2px 4px #a3a3a3'"
                     onmouseout="this.style['box-shadow']='none'" class="btn">Reset</button>
@@ -158,7 +170,8 @@
                 </div>
                 <span id="helpId-logpass" class="small sr-only">Enter your password</span>
             </div>
-            <button type="button" onclick="window.location.replace('userPage.html')" class="btn-theme btn-theme-full" style="width:85px;">Login</button>
+            <button type="button" onclick="window.location.replace('userPage.html')" class="btn-theme btn-theme-full"
+                style="width:85px;">Login</button>
         </form>
     </div>
     <div class="about" id="about">
@@ -188,6 +201,9 @@
             </div>
         </div>
     </div>
+
+    <!------------------------------------------------- Footer Begin -------------------------------------------------------->
+
     <footer class="main-footer">
         <form class="centre" style="padding-top:4vh;" method="POST">
             <div class="form-inline">
@@ -207,20 +223,22 @@
             </div>
 
         </form>
-        <div class="centre" style="margin-left: 10%">
-            <a href=""><i class="fab fa-twitter-square"></i> </a>
-            <a href=""> <i class="fab fa-facebook-square"></i></a>
-            <a href=""> <i class="fab fa-linkedin"></i></a>
-        </div>
+
         <div class="row centre">
             <div class="centre" style="font-family: 'DM Serif Text', serif; font-size: 35pt">
                 MyMOOC
                 <div style="font-family:initial; font-size:14pt;">
                     <i style="font-size:larger" class="far fa-envelope"></i> info@mymooc.org<br />
-                    <i class="fas fa-phone-volume"></i>+91 74189 37544<br />
+                    <i class="fas fa-phone-volume"></i>+91 98765 43210<br />
                     Mon-Fri 10:00 am to 6:00 pm IST
                 </div>
 
+            </div>
+            <div class="centre" style="margin-left: 10%">
+                Find us on:
+                <a href=""><i class="fab fa-twitter-square"></i> </a>
+                <a href=""> <i class="fab fa-facebook-square"></i></a>
+                <a href=""> <i class="fab fa-linkedin"></i></a>
             </div>
 
         </div>
@@ -230,6 +248,9 @@
 
 
     </footer>
+
+    <!-------------------------------------------------- Footer end --------------------------------------------------------->
+
 </body>
 
 </html>
