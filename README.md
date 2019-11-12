@@ -1,2 +1,2 @@
-# kalaashaala
-My personal website
+# MyMOOC
+MyMOOC template for quick mooc website development
